@@ -1,8 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #fdf6e3;
 }
 
-Header,
+header,
 footer {
   font-size: 1.5rem;
 }
@@ -32,19 +36,20 @@ ul {
   color: #fff;
 }
 
-a - .no-highlight {
+a :not(.no-highlight) {
   background-color: #719e07;
 }
 
 .contents > ul li:last-child {
-  background-color: #2694d8
+  background-color: #2694d8;
 }
+
 ol li:first-child {
   color: #719e47;
 }
 
 ol li:last-child {
-  #aa198;
+  color: #2aa198;
 }
 
 .types > li:nth-child(odd) {
@@ -55,6 +60,6 @@ ol li:last-child {
   background-color: #586e75;
 }
 
-.types > li:nth-child(3+6+9+12) {
+.types > li:nth-child(3n) {
   background-color: #d04b16;
 }
